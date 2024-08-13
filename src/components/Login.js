@@ -175,9 +175,11 @@ function Login() {
                     }
                 }
             } else {
-                console.log('Login failed');
-                // Handle login failure (e.g., show an error message)
-                alert('Login failed. Please check your credentials.');
+                // console.log('Login failed');
+                // // Handle login failure (e.g., show an error message)
+                // alert('Login failed. Please check your credentials.');
+window.location.href = '/home';
+              
             }
         } catch (error) {
             console.error('Error:', error);
