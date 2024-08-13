@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <style>
+    /* Chatbot CSS */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4; /* Light gray background for contrast */
+    }
+
+    .chat-container {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-header {
+      background-color: #e2c938;
+      color: #fff;
+      padding: 10px;
+      font-weight: bold;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      text-align: center;
+    }
+
+    .chat-body {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      max-height: 300px; /* Adjust based on your needs */
+    }
+
+    .chat-message {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .chat-message.bot {
+      background-color: #f1f1f1;
+      text-align: left;
+    }
+
+    .chat-message.user {
+      background-color: #e2c938;
+      color: #fff;
+      text-align: right;
+    }
+
+    .chat-footer {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+
+    .chat-footer input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 0;
+    }
+
+    .chat-footer button {
+      padding: 10px;
+      background-color: #e2c938;
+      color: #fff;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+    }
+
+    .chat-footer button:hover {
+      background-color: #e2c938;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">Chat with us</div>
+    <div class="chat-body" id="chat-body">
+      <div class="chat-message bot">Hello! How can I assist you today?</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chat-input" placeholder="Type your message..." />
+      <button id="chat-send">Send</button>
+    </div>
+  </div>
+
+  <script>
+    // Chatbot JavaScript
+    const responses = {
+        "Hi":"Hello! How can I assist you today?",
+        "hi":"Hello! How can I assist you today?",
+        "hello":"Hello! How can I assist you today?",
+        "Hello":"Hello! How can I assist you today?",
+        "name":"vista bot",
+        "Who created you":"Created by our CEO's Ajin Ribia, Dharshini, Charlotte",
+        "who created you?":"Created by our CEO's Ajin Ribia, Dharshini, Charlotte",
+        "who created you":"Created by our CEO's Ajin Ribia, Dharshini, Charlotte",
+        "created by":"Created by our CEO's Ajin Ribia, Dharshini, Charlotte",
+        "What is your name":"Vista bot",
+        "what is your name":"Vista bot",
+        "packages":"We offer a variety of travel packages including beach vacations, mountain retreats, city tours, and adventure trips.",
+        "Packages":"We offer a variety of travel packages including beach vacations, mountain retreats, city tours, and adventure trips.",
+        "beach vacations?": "Our beach vacation packages include stays at luxurious resorts, beachside activities, and guided tours of the local attractions.",
+        "discount":"We offer discounts for students and families on particular seasons",
+        "Contact":"Visit out contact page",
+        "number":"+9198545689",
+        "contact number":"+9198545689",
+        "email":"vista@gmail.com",
+        "mail":"vista@gmail.com",
+        "gmail":"vista@gmail.com",
+        "Packages?":"We offer a variety of travel packages including beach vacations, mountain retreats, city tours, and adventure trips.",
+      "What packages do you offer?": "We offer a variety of travel packages including beach vacations, mountain retreats, city tours, and adventure trips.",
+      "Can you tell me more about beach vacations?": "Our beach vacation packages include stays at luxurious resorts, beachside activities, and guided tours of the local attractions.",
+      "What is included in your adventure trips?": "Adventure trips include activities like hiking, zip-lining, and safari tours, with accommodation and meals provided.",
+      "Do you offer family-friendly packages?": "Yes, we offer family-friendly packages that include activities and accommodations suitable for all ages.",
+      "What is the best time to visit Europe?": "The best time to visit Europe is during the spring (April to June) or fall (September to October) for pleasant weather and fewer crowds.",
+      "How can I book a package?": "You can book a package by visiting our website and filling out the booking form or contacting our customer service for assistance.",
+      "What are your cancellation policies?": "Our cancellation policies vary depending on the package. Please refer to our website or contact us for detailed information.",
+      "Do you offer travel insurance?": "Yes, we offer travel insurance as an optional add-on with our travel packages.",
+      "How can I contact customer support?": "You can contact our customer support via email, phone, or live chat on our website.",
+    };
+
+    document.getElementById('chat-send').addEventListener('click', () => {
+      const input = document.getElementById('chat-input');
+      const chatBody = document.getElementById('chat-body');
+      const userMessage = input.value.trim();
+      
+      if (userMessage) {
+        const userDiv = document.createElement('div');
+        userDiv.className = 'chat-message user';
+        userDiv.textContent = userMessage;
+        chatBody.appendChild(userDiv);
+        
+        const botResponse = responses[userMessage] || "Sorry, I didn't understand that. Could you please rephrase?";
+        const botDiv = document.createElement('div');
+        botDiv.className = 'chat-message bot';
+        botDiv.textContent = botResponse;
+        chatBody.appendChild(botDiv);
+        
+        input.value = '';
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+    });
+
+    document.getElementById('chat-input').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        document.getElementById('chat-send').click();
+      }
+    });
+  </script>
+</body>
+</html>

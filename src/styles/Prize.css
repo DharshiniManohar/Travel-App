@@ -1,0 +1,14 @@
+/* src/styles/Prize.css */
+.prize-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Ensures no horizontal scroll bars */
+  }
+  
+  .prize-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
+  }
+  

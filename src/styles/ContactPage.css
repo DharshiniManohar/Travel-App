@@ -1,0 +1,87 @@
+.cocontact-page {
+    padding: 20px;
+    text-align: center;
+}
+  
+.con {
+    margin-bottom: 20px;
+    color: #e8bd6c; /* Your preferred color */
+}
+  
+.cocontact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+  
+.cocontact-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+  
+.cocontact-card h2 {
+    margin-top: 0;
+    color: #e8bd6c;
+}
+  
+.cocontact-card p {
+    margin: 8px 0;
+}
+  
+.cocontact-card a {
+    color: #e8bd6c;
+    text-decoration: none;
+}
+  
+.cocontact-card a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+/* Animation on click */
+.cocontact-card:active {
+    transform: scale(0.95); /* Slightly shrink the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly increase shadow */
+}
+
+@media (max-width: 600px) {
+    .cocontact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Highlight the selected contact card */
+.coclicked {
+    background-color: #f0f0f0;
+    border-color: #e8bd6c;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Styling for the contact details section */
+.cocontact-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.cocontact-details h2 {
+    color: #e8bd6c;
+}
+
+.cocontact-details a {
+    color: #e8bd6c;
+    text-decoration: none;
+}
+
+.cocontact-details a:hover {
+    text-decoration: underline;
+}

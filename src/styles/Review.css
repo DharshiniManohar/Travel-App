@@ -1,0 +1,57 @@
+/* src/styles/Review.css */
+.rev-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between images */
+    flex-wrap: wrap; /* Allow images to wrap if necessary */
+    gap: 20px; /* Space between images */
+    margin: 40px 30px; /* Margin around the container */
+  }
+  
+
+.rev-heading{
+    font-size: 1.5cm; 
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #040404; 
+    margin-bottom: 20px; 
+    margin-left: 1cm;
+}
+
+  .rev-image-container {
+    position: relative; /* Ensure that rev-text-box can be positioned absolutely within it */
+    flex: 1; /* Make images take up equal space */
+    min-width: calc(25% - 20px); /* 4 images per row with gap consideration */
+    height: 12cm; /* Set a consistent height for images */
+    overflow: hidden;
+  }
+  
+  .rev-image-container img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Cover the container and maintain aspect ratio */
+    display: block;
+  }
+  
+  .rev-text-box {
+    position: absolute; /* Position the text box absolutely within rev-image-container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the element */
+    background: rgba(71, 71, 71, 0.6); /* Semi-transparent background */
+    color: rgb(249, 248, 248); /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    margin-top: 4.59cm;
+    
+    width: 100%;
+    border-radius: 4px; /* Rounded corners */
+    text-align: center; /* Center text inside the box */
+    z-index: 10; /* Ensure it appears above the image */
+  }
+  
+  .rev-text {
+    font-size: 17px; /* Adjust font size as needed */
+    font-weight: bold; /* Font weight */
+    font-family: Georgia, serif;
+    margin: 0; /* Remove default margins */
+  }
+  

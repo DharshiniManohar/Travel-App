@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #e1a64d, #e3bc97); */
+    box-shadow: #dfb749 ;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-right: 2rem;
+}
+
+.login-form h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.login-form p {
+    color: #888;
+    font-size: 14px;
+}
+
+.login-form a {
+    color: #5a67d8;
+    text-decoration: none;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.forgot-password {
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #dfb749;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.login-button:hover {
+    background-color: #4c51bf;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.social-login button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.google-login {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.google-login:hover {
+    background-color: #c23321;
+}
+
+.facebook-login {
+    background-color: #4267b2;
+    color: #fff;
+}
+
+.facebook-login:hover {
+    background-color: #365899;
+}
+
+.login-illustration {
+    width: 400px;
+    /* Add the appropriate background or image styling here */
+}

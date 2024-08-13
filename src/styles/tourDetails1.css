@@ -1,0 +1,416 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.d-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.d-brand {
+  display: flex;
+  align-items: center;
+}
+
+.d-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.d-brand-name {
+  font-size: 24px;
+  color: white;
+}
+
+.d-nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.d-nav-links li {
+  margin: 0 15px;
+}
+
+.d-nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.d-nav-links a:hover {
+  color: white;
+  background-color: #e8bd6c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.d-enquiry-button {
+  background-color: #e8bd6c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.d-enquiry-button:hover {
+  background-color: #333;
+  color: #e8bd6c;
+}
+
+.d-tour-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.d-tour-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.d-tour-description {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.d-tour-image1 {
+  width: 75%;
+  height: auto;
+}
+
+.d-info-box1 {
+  width: 25%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.d-speciality-list, .why-choose-us {
+  margin-top: 10px;
+}
+
+.d-speciality-list ul, .why-choose-us ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.d-speciality-list li, .why-choose-us li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.d-speciality-list .icon {
+  margin-right: 10px;
+}
+.d-booking-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.d-booking-form {
+  background-color: #e8bd6c;
+  width: 10cm;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.d-booking-form h2 {
+  margin-top: 0;
+}
+
+.d-booking-form .form-group {
+  margin-bottom: 15px;
+}
+
+.d-booking-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.d-booking-form select, .booking-form input {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.d-booking-form button {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.d-booking-form button:hover {
+  background-color: #004494;
+}
+
+.d-booking-form .reservation-info {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.d-trip-details {
+  width: 10cm;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.d-trip-details h2 {
+  margin-top: 0;
+}
+
+.d-trip-detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.d-trip-detail-item .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.d-trip-detail-item p {
+  margin: 0;
+}
+.d-cost-details {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.d-cost-info {
+  width: 12cm;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.d-total-price {
+  width: 25%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #e8bd6c;
+}
+
+.d-cost-info h2, .total-price h2 {
+  margin-top: 0;
+}
+
+.d-cost-info p, .total-price p {
+  margin: 10px 0;
+}
+
+.d-total-price p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0056b3;
+}
+.d-tour-info-section {
+  margin-top: 20px;
+  padding-left: 300px;
+}
+
+.d-info-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 13cm;
+  padding-left: 90px;
+  padding-right: 90px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.d-info-box h3 {
+  margin-top: 0;
+}
+
+.d-info-box ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.d-info-box li {
+  margin: 5px 0;
+}
+
+.d-info-box p {
+  margin: 0;
+}
+.d-login-section {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.d-login-background {
+  background-image: url('https://images.squarespace-cdn.com/content/v1/53109b11e4b05040160f0a8f/1574674315402-PQ7IE2MSNK5H1PIZEEXY/tourism+logos+world+map.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px; /* Adjust height as needed */
+  width: 1250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+.d-login-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.d-login-form {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  color: #333;
+}
+
+.d-login-form h2 {
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.d-login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.d-login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.d-login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.d-login-form button:hover {
+  background-color: #d48e00;
+}
+
+.d-info-section {
+  background-color: #b4b0b0;
+  padding: 40px 20px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center; 
+  text-align: left;
+}
+
+.d-info-container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column; 
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.d-info-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.d-info-rows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.d-info-column {
+  flex: 1;
+  margin-right: 20px; /* Adds space between the columns */
+}
+
+.d-info-column:last-child {
+  margin-right: 0;
+}
+
+.d-info-column h3 {
+  margin-bottom: 10px;
+}
+
+.d-info-container p {
+  margin-bottom: 15px;
+}
+
+.d-info-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.d-info-container ul li {
+  margin-bottom: 5px;
+}
+
+
+.d-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.d-social-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.d-ultimate-group-tour .no-underline {
+  text-decoration: none;
+}

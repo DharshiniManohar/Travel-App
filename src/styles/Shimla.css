@@ -1,0 +1,245 @@
+/* Styles for the honeymoon section */
+.honeymoon-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url("https://www.trawell.in/blog/wp-content/uploads/2024/07/shimla-main-730x410.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .soverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stitle {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  .ssubtitle {
+    font-size: 24px;
+    font-style: italic;
+    position: absolute;
+    top: 160px;
+    right: 300px;
+    margin: 20px;
+    color: #f7f7f7;
+  }
+
+  
+  .senquire-button {
+    background-color: #e8bd6c;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .senquire-button.clicked {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .scontent-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .sstate-list {
+    width: 30%;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .sstate-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sstate-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sstate-list li.active,
+  .sstate-list li:hover {
+    background-color: #e8bd6c;
+    color: white;
+  }
+  
+  .sstate-description {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  /* Styles for the 'Got a Question?' box */
+  .squestion-box {
+    background-color: #e8bd6c;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .squestion-box h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .squestion-box p {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .scontact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .scontact-info span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .scontact-info svg {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .scontent-container {
+      flex-direction: column;
+    }
+  
+    .sstate-list,
+    .sstate-description {
+      width: 100%;
+    }
+  
+    .squestion-box {
+      padding: 15px;
+    }
+  
+    .squestion-box h4 {
+      font-size: 18px;
+    }
+  
+    .squestion-box p {
+      font-size: 14px;
+    }
+  
+    .scontact-info svg {
+      font-size: 18px;
+    }
+  }
+  .sh{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size:xx-large;
+  }
+  .shi{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+  }
+  .shim{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+  }
+  .shig{
+    height: 400px;
+    width:1100px;
+
+   
+  }
+.scontent-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+  }
+  
+  .sstate-list {
+    flex: 1; 
+  }
+  
+ 
+  .squestion-box {
+    margin-bottom: 20px; 
+  }
+  
+  
+  .sform-box {
+    flex: 2;
+    border: 1px solid #ddd;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+  }
+  
+  form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+  }
+  
+  form button.submit-button {
+    width: 100%;
+    padding: 10px; 
+    border: none; 
+    background-color: #007bff; 
+    color: white; 
+    font-size: 16px; 
+    border-radius: 4px;
+    cursor: pointer; 
+  }
+  
+  form button.submit-button:hover {
+    background-color: #0056b3; 
+  }
+  /* Kerala.css */
+
+/* Style for the footer */
+.sfooter {
+    background-color: #e8bd6c; /* Dark background color */
+    color:black; /* White text color */
+    padding: 20px; /* Padding around the footer content */
+    text-align: center; /* Center the text */
+  }
+  
+  .sfooter-content {
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center align the content */
+  }
+  
+  .sfooter-links {
+    margin-top: 10px; /* Space above the links */
+  }
+  
+  .sfooter-links a {
+    color:black; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+  }
+  
+  .sfooter-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }

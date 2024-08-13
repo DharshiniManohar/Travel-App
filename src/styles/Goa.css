@@ -1,0 +1,269 @@
+/* Styles for the honeymoon section */
+.goahoneymoon-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url("https://www.kinghillstravels.com/uploads/primary_banner/0wrVSxucLE.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .coverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ctitle {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  .csubtitle {
+    font-size: 24px;
+    font-style: italic;
+    position: absolute;
+    top: 160px;
+    right: 300px;
+    margin: 20px;
+    color: #f7f7f7;
+  }
+
+  
+  .cenquire-button {
+    background-color: #e8bd6c;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cenquire-button.clicked {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .ccontent-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .cstate-list {
+    width: 30%;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .cstate-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cstate-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cstate-list li.active,
+  .cstate-list li:hover {
+    background-color: #e8bd6c;
+    color: white;
+  }
+  
+  .cstate-description {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  /* Styles for the 'Got a Question?' box */
+  .cquestion-box {
+    background-color: #e8bd6c;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .cquestion-box h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .cquestion-box p {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .ccontact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ccontact-info span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ccontact-info svg {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .cstate-list,
+    .cstate-description {
+      width: 100%;
+    }
+  
+    .cquestion-box {
+      padding: 15px;
+    }
+  
+    .cquestion-box h4 {
+      font-size: 18px;
+    }
+  
+    .cquestion-box p {
+      font-size: 14px;
+    }
+  
+    .ccontact-info svg {
+      font-size: 18px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .goathree{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size:xx-large;
+  }
+  .goapara{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+  }
+  .goaul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+  }
+  .goag{
+    height: 400px;
+    width:900px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.ccontent-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+  }
+  
+  .cstate-list {
+    flex: 1; 
+  }
+  
+ 
+  .cquestion-box {
+    margin-bottom: 20px; 
+  }
+  
+  
+  .cform-box {
+    flex: 2;
+    border: 1px solid #ddd;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+  }
+  
+  form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+  }
+  
+  form button.submit-button {
+    width: 100%;
+    padding: 10px; 
+    border: none; 
+    background-color: #007bff; 
+    color: white; 
+    font-size: 16px; 
+    border-radius: 4px;
+    cursor: pointer; 
+  }
+  
+  form button.submit-button:hover {
+    background-color: #0056b3; 
+  }
+  /* Kerala.css */
+
+/* Style for the footer */
+.cfooter {
+    background-color: #e8bd6c; /* Dark background color */
+    color:black; /* White text color */
+    padding: 20px; /* Padding around the footer content */
+    text-align: center; /* Center the text */
+  }
+  
+  .cfooter-content {
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center align the content */
+  }
+  
+  .cfooter-links {
+    margin-top: 10px; /* Space above the links */
+  }
+  
+  .cfooter-links a {
+    color:black; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+  }
+  
+  .cfooter-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }

@@ -1,0 +1,29 @@
+/* src/styles/Copyright.css */
+.copyright-container {
+    width: 100%;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc; /* Optional border for separation */
+  }
+  
+  .copyright-text {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .policy-links {
+    margin-top: 10px;
+  }
+  
+  .policy-links a {
+    color: #000; /* Black text */
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .policy-links a:hover {
+    text-decoration: underline;
+  }
+  
